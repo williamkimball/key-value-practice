@@ -148,10 +148,21 @@ console.log(elizabeth_sanger.urlregistration)
 
 
 let newDiv = document.createElement("article");
-newDiv.setAttribute("id", `${elizabeth_sanger.congressional_district}`)
+newDiv.setAttribute("id", `district_${elizabeth_sanger.congressional_district}`)
+let divContent = "";
+let list = document.createElement("ul")
 
-for (const prop in elizabeth_sanger.platform) {
-    document.createElement("li");
-};
+let makeLi = () => {
+    document.createElement(li)
+}
+let key = "";
+let property = "";
+
+
+for (property in elizabeth_sanger.platform) {
+    divContent +=  elizabeth_sanger.platform[property] + " "
+}
+
+newDiv.innerHTML= divContent;
 
 document.querySelector("#place").appendChild(newDiv);
