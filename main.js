@@ -160,7 +160,7 @@ let property = "";
 
 
 for (property in elizabeth_sanger.platform) {
-    divContent +=  elizabeth_sanger.platform[property] + " "
+    divContent += `${property} = ${elizabeth_sanger.platform[property]} <br>`
 }
 
 newDiv.innerHTML= divContent;
