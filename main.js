@@ -145,3 +145,6 @@ function changeRegistrationState(registration) {
 };
 changeRegistrationState("www.yo.com");
 console.log(elizabeth_sanger.urlregistration)
+
+
+document.createElement("article");
