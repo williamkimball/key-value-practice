@@ -147,4 +147,11 @@ changeRegistrationState("www.yo.com");
 console.log(elizabeth_sanger.urlregistration)
 
 
-document.createElement("article");
+let newDiv = document.createElement("article");
+newDiv.setAttribute("id", `${elizabeth_sanger.congressional_district}`)
+
+for (const prop in elizabeth_sanger.platform) {
+    document.createElement("li");
+};
+
+document.querySelector("#place").appendChild(newDiv);
