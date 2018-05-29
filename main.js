@@ -152,13 +152,6 @@ newDiv.setAttribute("id", `district_${elizabeth_sanger.congressional_district}`)
 let divContent = "";
 let list = document.createElement("ul")
 
-let makeLi = () => {
-    document.createElement(li)
-}
-let key = "";
-let property = "";
-
-
 for (property in elizabeth_sanger.platform) {
     divContent += `${property} = ${elizabeth_sanger.platform[property]} <br>`
 }
