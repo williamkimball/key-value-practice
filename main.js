@@ -77,10 +77,10 @@ function changePlatformState(object, plat) {
 };
 
 changePlatformState(elizabeth_sanger, {
-    taxes: "low",
+    taxes: "suuuuuper high",
     jobs: "none",
-    infrastructure: "nope",
-    healthcare: "max",
+    infrastructure: "let them ride horses",
+    healthcare: "rub some dirt on it",
     crime_and_enforcement: "anarchy"
 })
 
@@ -149,13 +149,15 @@ console.log(elizabeth_sanger.urlregistration)
 
 let newDiv = document.createElement("article");
 newDiv.setAttribute("id", `district_${elizabeth_sanger.congressional_district}`)
-let divContent = "";
+
 let list = document.createElement("ul")
 
 for (property in elizabeth_sanger.platform) {
-    divContent += `${property} = ${elizabeth_sanger.platform[property]} <br>`
+    let liRef = document.createElement("li")
+    liRef.textContent = `${property}: ${elizabeth_sanger.platform[property]}`
+    list.appendChild(liRef);
 }
 
-newDiv.innerHTML= divContent;
+newDiv.appendChild(list);
 
 document.querySelector("#place").appendChild(newDiv);
